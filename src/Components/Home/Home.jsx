@@ -1,10 +1,14 @@
 import React from 'react';
+import useReviewHooks from '../ReviewHooks/ReviewHooks';
 
 const Home = () => {
+
+const [ review, setReview]=useReviewHooks()
+
     return (
         <div>
 
-            <div className='grid grid-cols-2 justify-items-center items-center '>
+            <div className='grid grid-cols-2 justify-items-center items-center px-10'>
                 <div className=''>
                     <h2 className='text-6xl font-bold py-5'>Royal Enfield</h2>
                     <h2 className='text-6xl font-bold'>Things to Know</h2>
@@ -18,10 +22,13 @@ const Home = () => {
             </div>
             <div className='my-14'>
                 <div>
-                <h3 className='text-2xl font-bold bg-gray-300'>Coustomer Review</h3>
+                <h3 className='text-2xl text-center font-bold bg-gray-300 '>Coustomer Review</h3>
                 </div>
                 <div>
-                    
+
+
+
+                    <button className='mt-5 bg-gray-400 px-4 rounded-md'>SEE ALL REVIEWS</button>
                 </div>
             </div>
         </div>
