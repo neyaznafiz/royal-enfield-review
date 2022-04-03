@@ -1,9 +1,17 @@
 import React from 'react';
+import MyFunnelChart from '../MyFunnelChart/MyFunnelChart';
+import MyRadialBarChart from '../MyRadialBarChart/MyRadialBarChart';
+
+
 
 const Dashboard = () => {
+   
     return (
         <div>
-            <h2 className='text-4xl'>dashboard</h2>
+            {/* <MyFunnelChart></MyFunnelChart> */}
+            <MyRadialBarChart></MyRadialBarChart>
+
+            
         </div>
     );
 };
