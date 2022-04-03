@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div>
 
-            <div className='grid grid-cols-2 justify-items-center items-center'>
+            <div className='grid grid-cols-2 justify-items-center items-center '>
                 <div className=''>
                     <h2 className='text-6xl font-bold py-5'>Royal Enfield</h2>
                     <h2 className='text-6xl font-bold'>Things to Know</h2>
@@ -16,8 +16,13 @@ const Home = () => {
                 </div>
 
             </div>
-            <div className=''>
-                <h3>Coustomer Review</h3>
+            <div className='my-14'>
+                <div>
+                <h3 className='text-2xl font-bold bg-gray-300'>Coustomer Review</h3>
+                </div>
+                <div>
+                    
+                </div>
             </div>
         </div>
     );
