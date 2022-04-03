@@ -15,17 +15,14 @@ const Reviews = () => {
 
                     <div className='border border-neutral-600 px-10 pb-5 pt-2 mx-10 my-3 rounded-md'>
 
-                       <div className='flex'>
+                       <div className='flex  gap-3'>
                        <img className='w-10 h-10 rounded-full ' src={review.picture} alt="" />
                         
-                        <span className='font-bold pt-2 ml-2'>{review.name}</span>
+                        <h1 className='font-bold pt-2 whitespace-nowrap'>{review.name}</h1>
 
-                        <p className='ml-10'>{review.comment}</p>
+                        <p className='pt-2'>{review.comment}</p>
                        </div>
-
-                        
-                    
-
+                       
                     </div>
 
                 </div>)
