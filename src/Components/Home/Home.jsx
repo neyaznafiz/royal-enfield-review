@@ -3,7 +3,7 @@ import useReviewHooks from '../ReviewHooks/ReviewHooks';
 
 const Home = () => {
 
-const [ review, setReview]=useReviewHooks()
+    const [reviews, setReviews] = useReviewHooks()
 
     return (
         <div>
@@ -22,11 +22,30 @@ const [ review, setReview]=useReviewHooks()
             </div>
             <div className='my-14'>
                 <div>
-                <h3 className='text-2xl text-center font-bold bg-gray-300 '>Coustomer Review</h3>
+                    <h3 className='text-2xl text-center font-bold bg-gray-300 '>Coustomer Review</h3>
                 </div>
                 <div>
 
+                    {
+                        reviews.slice(0, 3).map(review => <div>
 
+                            <div className='border border-neutral-600 px-10 pb-5 pt-2 mx-10 my-3 rounded-md'>
+
+                                <div className='flex'>
+                                    <img className='w-10 h-10 rounded-full ' src={review.picture} alt="" />
+
+                                    <span className='font-bold pt-2 ml-2'>{review.name}</span>
+
+                                    <p className='ml-10'>{review.comment}</p>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>)
+                    }
 
                     <button className='mt-5 bg-gray-400 px-4 rounded-md'>SEE ALL REVIEWS</button>
                 </div>

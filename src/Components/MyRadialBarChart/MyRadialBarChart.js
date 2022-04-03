@@ -49,7 +49,7 @@ const MyRadialBarChart = () => {
     return (
         <div >
 
-            <h2 className='text-4xl font-bold bg-gray-300 mx-48 rounded-t-xl'>Data Chart</h2>
+            <h2 className='text-4xl text-center font-bold bg-gray-300 mx-48 rounded-t-xl'>Data Chart</h2>
 
             <RadialBarChart
                 width={1300}
