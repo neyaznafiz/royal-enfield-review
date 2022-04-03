@@ -2,6 +2,11 @@ import React from 'react';
 import { RadialBar, RadialBarChart, Tooltip } from 'recharts';
 
 const MyRadialBarChart = () => {
+    
+
+    // const {info} = props
+
+    // const { month, investment, sell, revenue } = info
 
     const data = [
         {
@@ -42,29 +47,33 @@ const MyRadialBarChart = () => {
         }
     ]
     return (
-  <div>
+        <div >
 
-<RadialBarChart
-       width={1300} 
-       height={1300} 
-       innerRadius="10%" 
-       outerRadius="80%" 
-       data={data} 
-       startAngle={180} 
-       endAngle={0}
-       >
+            <h2 className='text-4xl font-bold bg-gray-300 mx-48 rounded-t-xl'>Data Chart</h2>
 
-<RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='month' />
+            <RadialBarChart
+                width={1300}
+                height={1300}
+                innerRadius="10%"
+                outerRadius="80%"
+                data={data}
+                startAngle={180}
+                endAngle={0}
 
-<RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='investment' />
+                className="mx-auto"
+            >
 
-<RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='revenue' />
+                <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='month' />
 
-  <Tooltip />
+                <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='investment' />
 
-       </RadialBarChart>
+                <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='revenue' />
 
-  </div>
+                <Tooltip />
+
+            </RadialBarChart>
+
+        </div>
     );
 };
 
