@@ -1,9 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReviewHooks from '../ReviewHooks/ReviewHooks';
 
 const Home = () => {
 
-    const [reviews, setReviews] = useReviewHooks()
+    const [reviews,] = useReviewHooks()
+
+    const navigate = useNavigate()
 
     return (
         <div>
@@ -47,7 +50,7 @@ const Home = () => {
                         </div>)
                     }
 
-                    <button className='mt-5 bg-gray-400 px-4 rounded-md'>SEE ALL REVIEWS</button>
+                    <button onClick={()=> navigate(`/reviews`)} className='mt-5 bg-gray-400 px-4 rounded-md'>SEE ALL REVIEWS</button>
                 </div>
             </div>
         </div>
