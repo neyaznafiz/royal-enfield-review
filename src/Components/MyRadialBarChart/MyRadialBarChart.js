@@ -1,8 +1,8 @@
 import React from 'react';
-import { RadialBar, RadialBarChart, Tooltip } from 'recharts';
+import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, RadialBar, RadialBarChart, Tooltip } from 'recharts';
 
 const MyRadialBarChart = () => {
-    
+
 
     // const {info} = props
 
@@ -49,30 +49,57 @@ const MyRadialBarChart = () => {
     return (
         <div >
 
-            <h2 className='text-4xl text-center font-bold bg-gray-300 mx-48 rounded-t-xl'>Data Chart</h2>
+            <h2 className='text-4xl text-center font-bold bg-gray-300 rounded-t-xl'>Data Chart</h2>
 
-            <RadialBarChart
-                width={1300}
-                height={1300}
-                innerRadius="10%"
-                outerRadius="80%"
-                data={data}
-                startAngle={180}
-                endAngle={0}
 
-                className="mx-auto"
-            >
+            <div className='flex'>
 
-                <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='month' />
+                <div>
+                    {/* redial bar chart */}
+                    <RadialBarChart
+                        width={1000}
+                        height={1000}
+                        innerRadius="10%"
+                        outerRadius="80%"
+                        data={data}
+                        startAngle={180}
+                        endAngle={0}
 
-                <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='investment' />
+                        className="mx-auto"
+                    >
 
-                <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='revenue' />
+                        <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='month' />
 
-                <Tooltip />
+                        <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='investment' />
 
-            </RadialBarChart>
+                        <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='revenue' />
 
+                        <Tooltip />
+
+                    </RadialBarChart>
+
+                </div>
+
+                <div className=''>
+
+                    {/* radar chart */}
+                    <RadarChart outerRadius={200} width={1030} height={550} data={data} className="pt-10">
+
+                        <PolarGrid />
+                        <PolarAngleAxis dataKey="month" />
+                        <PolarRadiusAxis angle={30} domain={[0, 150]} />
+
+                        <Radar name="investment" dataKey="investment" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+
+                        <Radar name="revenue" dataKey="revenue" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6} />
+
+                        <Tooltip />
+
+                    </RadarChart>
+
+                </div>
+
+            </div>
         </div>
     );
 };
