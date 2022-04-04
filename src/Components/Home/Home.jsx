@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsStarHalf } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import useReviewHooks from '../ReviewHooks/ReviewHooks';
 
@@ -23,21 +24,26 @@ const Home = () => {
                 </div>
 
             </div>
-            <div className='my-14'>
+            <div className='my-14 pt-10'>
                 <div>
-                    <h3 className='text-2xl text-center font-bold bg-gray-300 '>Coustomer Review</h3>
+                    <h3 className='text-3xl text-center font-bold'><span className='border-b-2 px-4 drop-shadow-lg rounded-t-md '>Coustomer Review</span></h3>
                 </div>
                 <div>
 
                     {
                         reviews.slice(0, 3).map(review => <div>
 
-                            <div className='border border-neutral-600 px-10 pb-5 pt-2 mx-10 my-3 rounded-md'>
+                            <div className=' shadow-xl px-10 pb-5 pt-2 mx-10 my-5 rounded-md'>
 
-                                <div className='flex  gap-3'>
+                                <div className='flex  gap-4'>
+
                                     <img className='w-10 h-10 rounded-full ' src={review.picture} alt="" />
 
-                                    <h1 className='font-bold pt-2 whitespace-nowrap'>{review.name}</h1>
+                                    <div>
+                                <h1 className='font-bold pt-1 whitespace-nowrap text-lg'>{review.name}</h1>
+
+                                <p className='whitespace-nowrap flex font-semibold'> {review.rating} <BsStarHalf className='text-xs text-yellow-400 my-1.5 '></BsStarHalf></p>
+                            </div>
 
                                     <p className='pt-2'>{review.comment}</p>
                                 </div>
@@ -48,7 +54,7 @@ const Home = () => {
                     }
 
                     <div className='text-center'>
-                        <button onClick={() => navigate(`/reviews`)} className='mt-5 bg-gray-400 px-4 py-2 rounded-md hover:bg-gray-300'>SEE ALL REVIEWS</button>
+                        <button onClick={() => navigate(`/reviews`)} className='mt-5 bg-gray-300 px-4 py-2 rounded-md shadow-lg hover:bg-gray-500 hover:text-white'>SEE ALL REVIEWS</button>
                     </div>
                 </div>
             </div>
