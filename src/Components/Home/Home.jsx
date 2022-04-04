@@ -14,12 +14,12 @@ const Home = () => {
 
             <div className='grid grid-cols-2 justify-items-center items-center px-10'>
                 <div className=''>
-                    <h2 className='text-6xl font-bold py-5'>Royal Enfield</h2>
-                    <p className='p-6'>I’ve read the Royal Enfield Himalayan’s manual and paperwork so you don’t have to. Here’s the most important things I learnt about my new motorcycle. First things to do with your new beast Set your clock. Hold select and mode buttons for 3 seconds then press it to set hours. Hold select for 3 seconds.</p>
+                    <h2 className='text-6xl font-bold py-5 '>Royal Enfield</h2>
+                    <p className='p-6'>Firstly it's Royal Enfield's first ever made cafe racer bike. I loved it by the looks and awesome styling, as there is more options for this cafe racer bikes, they don't have such great road presence, but well created. They are over priced according to Indian roads and rules. 0 to 100 in 5 seconds. No vibration, and excellent for long-distance with good control off-road and as well as on the road. 650 cc gives good speed on highways. I will recommend this who want to go for long drives with comfortable seating and uninterrupted ride with a good service network of Royal enfield Trusted brand.</p>
                 </div>
 
                 <div className=''>
-                    <img className='my-6 rounded-md' src="royal-enfield.png" alt="" />
+                    <img className='my-6 rounded-md ' src="royal-enfield.png" alt="" />
                 </div>
 
             </div>
