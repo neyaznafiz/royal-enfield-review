@@ -5,7 +5,7 @@ import useReviewHooks from '../ReviewHooks/ReviewHooks';
 
 const Home = () => {
 
-    const [reviews,] = useReviewHooks()
+    const [reviews] = useReviewHooks()
 
     const navigate = useNavigate()
 
@@ -35,7 +35,7 @@ const Home = () => {
 
                             <div className=' shadow-xl px-10 pb-5 pt-2 mx-10 my-5 rounded-md'>
 
-                                <div className='flex  gap-4'>
+                             cfd   <div className='flex  gap-4'>
 
                                     <img className='w-10 h-10 rounded-full ' src={review.picture} alt="" />
 
