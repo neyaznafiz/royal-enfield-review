@@ -8,7 +8,7 @@ const ErrorPage = () => {
 const navigate = useNavigate()
 
     return (
-        <div className='text-center'>
+        <div className='text-center pb-80'>
 
           <h2 className='text-red-600 text-9xl'>404</h2>
           <p className='text-3xl'>Page Not Fund</p>
