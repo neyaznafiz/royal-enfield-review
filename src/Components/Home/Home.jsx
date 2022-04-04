@@ -18,8 +18,9 @@ const Home = () => {
                     <p className='p-6'>Firstly it's Royal Enfield's first ever made cafe racer bike. I loved it by the looks and awesome styling, as there is more options for this cafe racer bikes, they don't have such great road presence, but well created. They are over priced according to Indian roads and rules. 0 to 100 in 5 seconds. No vibration, and excellent for long-distance with good control off-road and as well as on the road. 650 cc gives good speed on highways. I will recommend this who want to go for long drives with comfortable seating and uninterrupted ride with a good service network of Royal enfield Trusted brand.</p>
 
                    <div className='mt-9 text-center'>
-                   <a href="https://www.youtube.com/watch?v=2I-Fdc4w6is" className='mt-5 bg-gray-300 px-4 py-2 mb-7 rounded-md shadow-lg hover:bg-gray-500 hover:text-white'> Explore Royal Enfield </a>
+                   <a href="https://www.youtube.com/watch?v=2I-Fdc4w6is" target="_blank" className='mt-5 bg-gray-300 px-4 py-2 mb-7 rounded-md shadow-lg hover:bg-gray-500 hover:text-white'> Explore Royal Enfield </a>
                    </div>
+
                 </div>
 
                 <div className=''>
