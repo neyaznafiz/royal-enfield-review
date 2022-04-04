@@ -9,4 +9,4 @@
 
 - In Dashboard you can see our analysis.
 
-. In Blog sectioon you can explore some question. I hope, it will be helpful for you. 
+- In Blog sectioon you can explore some question. I hope, it will be helpful for you. 
