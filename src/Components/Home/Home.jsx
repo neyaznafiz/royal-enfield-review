@@ -35,7 +35,7 @@ const Home = () => {
 
                             <div className=' shadow-xl px-10 pb-5 pt-2 mx-10 my-5 rounded-md'>
 
-                             cfd   <div className='flex  gap-4'>
+                                <div className='flex  gap-4'>
 
                                     <img className='w-10 h-10 rounded-full ' src={review.picture} alt="" />
 
