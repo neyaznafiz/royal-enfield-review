@@ -53,8 +53,8 @@ const Home = () => {
                         </div>)
                     }
 
-                    <div className='text-center'>
-                        <button onClick={() => navigate(`/reviews`)} className='mt-5 bg-gray-300 px-4 py-2 rounded-md shadow-lg hover:bg-gray-500 hover:text-white'>SEE ALL REVIEWS</button>
+                    <div className='text-center '>
+                        <button onClick={() => navigate(`/reviews`)} className='mt-5 bg-gray-300 px-4 py-2 mb-7 rounded-md shadow-lg hover:bg-gray-500 hover:text-white'>SEE ALL REVIEWS</button>
                     </div>
                 </div>
             </div>
